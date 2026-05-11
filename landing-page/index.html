@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PVZ Defense Systems</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🌻 PVZ Defense Systems</h1>
+        <p>Protegiendo jardines desde 2009</p>
+    </header>
+
+    <section class="plants-section">
+
+        <h2>Plantas Destacadas</h2>
+
+
+        <div class="cards" id="plants-container">
+
+        </div>
+
+
+    </section>
+
+        <script>
+
+    async function loadPlants() {
+
+        const response = await fetch('http://localhost:8080/plants');
+
+        const plants = await response.json();
+
+        const container = document.getElementById('plants-container');
+
+        plants.forEach(plant => {
+
+            const card = document.createElement('div');
+
+            card.classList.add('card');
+
+            card.innerHTML = `
+                <h3>${plant.name}</h3>
+                <p>${plant.description}</p>
+                <p>🌞 Cost: ${plant.sun_cost}</p>
+                <p>💥 Damage: ${plant.damage}</p>
+            `;
+
+            container.appendChild(card);
+
+        });
+
+    }
+
+    loadPlants();
+
+    </script>
+
+</body>
+
+</html>
