@@ -2,9 +2,17 @@ version: '3.8'
 
 services:
 
+  frontend: 
+    build: frontend
+
+    ports:
+      - "80:80"
+
+    restart: always
+
   backend:
 
-    build: .
+    build: backend
 
     ports:
       - "8080:8080"
