@@ -14,6 +14,12 @@ services:
 
     restart: always
 
+    environment:
+      DB_HOST: mysql-db
+      DB_USER: root
+      DB_PASSWORD: Zombidito-100
+      DB_NAME: pvz_db
+
   mysql-db:
 
     image: mysql:8.0
