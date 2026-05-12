@@ -19,7 +19,7 @@ services:
     image: mysql:8.0
 
     environment:
-      MYSQL_ROOT_PASSWORD: password123
+      MYSQL_ROOT_PASSWORD: Zombidito-100
       MYSQL_DATABASE: pvz_db
 
     ports:
