@@ -2,7 +2,7 @@ let editingPlantId = null;
 
 async function loadPlants() {
 
-    const response = await fetch('http://localhost:8080/plants');
+    const response = await fetch('/plants');
 
     const plants = await response.json();
 
@@ -63,9 +63,8 @@ async function addPlant() {
 
     const image_url = document.getElementById('image_url').value;
 
-    const url = editingPlantId
-        ? `http://localhost:8080/plants/${editingPlantId}`
-        : 'http://localhost:8080/plants';
+    const url = editingPlantId ? '/plants/' + editingPlantId : '/plants'; 
+
 
     const method = editingPlantId
         ? 'PUT'
@@ -110,11 +109,9 @@ async function addPlant() {
 
 async function deletePlant(id) {
 
-    await fetch(`http://localhost:8080/plants/${id}`, {
+    
+    await fetch('/plants/' + id, { method: 'DELETE' });
 
-        method: 'DELETE'
-
-    });
 
     loadPlants();
 
@@ -122,7 +119,7 @@ async function deletePlant(id) {
 
 async function editPlant(id) {
 
-    const response = await fetch('http://localhost:8080/plants');
+    const response = await fetch('/plants');
 
     const plants = await response.json();
 
