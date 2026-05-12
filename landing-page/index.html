@@ -1,143 +1,136 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garden Defense Systems</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Garden Defense Systems</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
+		<link rel="stylesheet" href="style.css">
+	</head>
 
-<body>
+	<body>
 
-    <header>
-        <h1>🌻 Garden Defense Systems 🌻</h1>
-        <p>Catálogo oficial de plantas defensivas</p>
-    </header>
+		<header>
+			<h1>🌻 Garden Defense Systems 🌻</h1>
+			<p>Catálogo oficial de plantas defensivas</p>
+		</header>
 
-    <section class="about-section">
+		<section class="about-section">
 
-    <h2>Sobre nosotros</h2>
+			<h2>Sobre nosotros</h2>
 
-    <p>
-        Garden Defense Systems se especializa en tecnologías avanzadas
-        de defensa botánica diseñadas para proteger jardines residenciales
-        y comerciales contra amenazas zombis.
-    </p>
+			<p>
+				Garden Defense Systems se especializa en tecnologías avanzadas
+				de defensa botánica diseñadas para proteger jardines residenciales
+				y comerciales contra amenazas zombis.
+			</p>
 
-    <p>
-        Nuestra empresa investiga, cataloga y desarrolla unidades vegetales
-        capaces de defender vecindarios completos mediante sistemas naturales
-        de protección.
-    </p>
+			<p>
+				Nuestra empresa investiga, cataloga y desarrolla unidades vegetales
+				capaces de defender vecindarios completos mediante sistemas naturales
+				de protección.
+			</p>
+		</section>
 
-</section>
+		<section class="plants-section">
 
-    <section class="plants-section">
+			<div class="cards" id="plants-container"></div>
+		</section>
 
-        <div class="cards" id="plants-container"></div>
+		<div class="modal" id="plant-modal">
 
-    </section>
+			<div class="modal-content">
 
-    <div class="modal" id="plant-modal">
+				<span class="close-btn" onclick="closeModal()">
+					✖
+				</span>
 
-        <div class="modal-content">
+				<img id="modal-image">
 
-            <span class="close-btn" onclick="closeModal()">
-                ✖
-            </span>
+				<div class="modal-info">
 
-            <img id="modal-image">
+					<h2 id="modal-name"></h2>
 
-            <div class="modal-info">
+					<p id="modal-description"></p>
 
-                <h2 id="modal-name"></h2>
+					<p id="modal-damage"></p>
 
-                <p id="modal-description"></p>
+					<p id="modal-cost"></p>
+				</div>
+			</div>
+		</div>
 
-                <p id="modal-damage"></p>
+		<script>
 
-                <p id="modal-cost"></p>
+			async function loadPlants() {
+				
+				const response = await fetch(`http://${window.location.hostname}:8080/plants`);
+				
+				const plants = await response.json();
+				
+				const container = document.getElementById('plants-container');
+				
+				container.innerHTML = '';
+				
+				plants.forEach(plant => {
+					
+					const card = document.createElement('div');
+					
+					card.classList.add('card');
+					
+					card.innerHTML = `
+					
+					<img
+					src="${plant.image_url}"
+					alt="${plant.name}"
+					>
+					
+					`;
+					
+					card.onclick = () => openModal(plant);
+					
+					container.appendChild(card);
+					
+					});
+					
+				}
+				
+				function openModal(plant) {
+					
+					document.getElementById('plant-modal').style.display =
+					'flex';
+					
+					document.getElementById('modal-image').src =
+					plant.image_url;
+					
+					document.getElementById('modal-name').innerText =
+					plant.name;
+					
+					document.getElementById('modal-description').innerText =
+					plant.description;
+					
+					document.getElementById('modal-damage').innerText =
+					`💥 Damage: ${plant.damage}`;
+					
+					document.getElementById('modal-cost').innerText =
+					`🌞 Sun Cost: ${plant.sun_cost}`;
+					
+				}
+				
+				function closeModal() {
+					
+					document.getElementById('plant-modal').style.display =
+					'none';
+					
+				}
+				
+				loadPlants();
+		</script>
 
-            </div>
-
-        </div>
-
-    </div>
-
-    <script>
-
-        async function loadPlants() {
-
-            const response = await fetch('http://localhost:8080/plants');
-
-            const plants = await response.json();
-
-            const container = document.getElementById('plants-container');
-
-            container.innerHTML = '';
-
-            plants.forEach(plant => {
-
-                const card = document.createElement('div');
-
-                card.classList.add('card');
-
-                card.innerHTML = `
-                
-                    <img 
-                        src="${plant.image_url}"
-                        alt="${plant.name}"
-                    >
-
-                `;
-
-                card.onclick = () => openModal(plant);
-
-                container.appendChild(card);
-
-            });
-
-        }
-
-        function openModal(plant) {
-
-            document.getElementById('plant-modal').style.display =
-                'flex';
-
-            document.getElementById('modal-image').src =
-                plant.image_url;
-
-            document.getElementById('modal-name').innerText =
-                plant.name;
-
-            document.getElementById('modal-description').innerText =
-                plant.description;
-
-            document.getElementById('modal-damage').innerText =
-                `💥 Damage: ${plant.damage}`;
-
-            document.getElementById('modal-cost').innerText =
-                `🌞 Sun Cost: ${plant.sun_cost}`;
-
-        }
-
-        function closeModal() {
-
-            document.getElementById('plant-modal').style.display =
-                'none';
-
-        }
-
-        loadPlants();
-
-    </script>
-
-    <footer>
-    © 2026 Garden Defense Systems. Todos los derechos reservados.
-</footer>
-
-</body>
-
+		<footer>
+			© 2026 Garden Defense Systems. Todos los derechos reservados.
+		</footer>
+	</body>
 </html>
+
