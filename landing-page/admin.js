@@ -91,6 +91,16 @@ async function addPlant() {
 
     editingPlantId = null;
 
+    document.getElementById('name').value = '';
+
+    document.getElementById('damage').value = '';
+
+    document.getElementById('sun_cost').value = '';
+
+    document.getElementById('description').value = '';
+
+    document.getElementById('image_url').value = '';
+
     document.getElementById('submit-btn').innerText =
         'Agregar Planta';
 
