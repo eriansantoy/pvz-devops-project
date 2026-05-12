@@ -11,21 +11,33 @@ app.use(cors());
 app.use(express.static('public')); 
 
 const db = mysql.createConnection({
-    host: 'mysql-db',
-    user: 'root',
-    password: 'Zombidito-100',
-    database: 'pvz_db'
+    host: process.env.DB_HOST || 'localhost',
+    user: process.env.DB_USER || 'root',
+    password: process.env.DB_PASSWORD || 'Zombidito-100',
+    database: process.env.DB_NAME || 'pvz_db'
 });
 
-db.connect((err) => {
+function connectDB() {
 
-    if (err) {
-        console.log('Error conectando a MySQL:', err);
-    } else {
-        console.log('Conectado a MySQL 🌻');
-    }
+    db.connect((err) => {
 
-});
+        if (err) {
+
+            console.log('Error conectando a MySQL:', err);
+
+            setTimeout(connectDB, 5000);
+
+        } else {
+
+            console.log('Conectado a MySQL 🌻');
+
+        }
+
+    });
+
+}
+
+connectDB();
 
 app.get('/', (req, res) => {
 
