@@ -1,25 +1,29 @@
 const express = require('express');
-const mysql = require('mysql2');
 const cors = require('cors');
-require('dotenv').config(); // Load environment variables
+const mysql = require('mysql2');
+require('dotenv').config();
 
 const app = express();
 app.use(express.json());
 app.use(cors());
 
-const db = mysql.createConnection({
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME,
-    port: process.env.DB_PORT || 3306
+const db = mysql.createPool({
+    host: process.env.DB_HOST || 'db',
+    user: process.env.DB_USER || 'root',
+    password: process.env.DB_PASSWORD || 'root_password',
+    database: process.env.DB_NAME || 'pvz_db',
+    waitForConnections: true,
+    connectionLimit: 10,
+    queueLimit: 0
 });
 
-db.connect((err) => {
+// Test the pool connection
+db.getConnection((err, connection) => {
     if (err) {
-        console.log('Error conectando a MySQL:', err);
+        console.error('Error connecting to MySQL Pool:', err.message);
     } else {
-        console.log('Conectado a MySQL (Read-Only) 🌻');
+        console.log('Connected to MySQL via Pool! 🌻');
+        connection.release(); // Important: release the test connection back to the pool
     }
 });
 
@@ -27,11 +31,16 @@ app.get('/', (req, res) => {
     res.send('PVZ Public API (Read-Only) 🌻');
 });
 
-// Only GET routes allowed for the public landing page
 app.get('/plants', (req, res) => {
+    // Safety check: Is the DB object ready?
+    if (!db) {
+        return res.status(503).send('Database connection is being established. Try again in a moment.');
+    }
+
     db.query('SELECT * FROM plants', (err, results) => {
         if (err) {
-            res.status(500).send(err);
+            console.error('Query error:', err);
+            res.status(500).json({ error: 'Error fetching plants', details: err.message });
         } else {
             res.json(results);
         }
