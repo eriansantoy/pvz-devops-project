@@ -100,3 +100,18 @@ button {
     gap: 5px;
     margin-top: 8px;
 }
+
+footer {
+
+    background-color: #2e7d32;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 40px;
+
+    font-size: 14px;
+}
