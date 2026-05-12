@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PVZ Admin Panel</title>
+
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🌻 PVZ Admin Panel</h1>
+    </header>
+
+    <section class="form-section">
+
+        <h2>Agregar Planta</h2>
+
+        <div class="form-grid">
+
+            <input type="text" id="name" placeholder="Nombre">
+
+            <input type="number" id="damage" placeholder="Daño">
+
+            <input type="number" id="sun_cost" placeholder="Costo de sol">
+
+            <input type="text" id="description" placeholder="Descripción">
+
+            <input type="text" id="image_url" placeholder="URL de imagen">
+
+        </div>
+
+        <button 
+            class="add-btn"
+            id="submit-btn"
+            onclick="addPlant()"
+        >
+            Agregar Planta
+        </button>
+
+    </section>
+
+    <section class="plants-section">
+
+        <h2>Plantas Registradas</h2>
+
+        <div id="plants-container"></div>
+
+    </section>
+
+    <script src="admin.js"></script>
+
+</body>
+
+</html>

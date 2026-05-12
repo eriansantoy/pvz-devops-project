@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PVZ Defense Systems</title>
+    <title>PVZ Almanac</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,52 +12,107 @@
 <body>
 
     <header>
-        <h1>🌻 PVZ Defense Systems</h1>
-        <p>Protegiendo jardines desde 2009</p>
+        <h1>🌻 PVZ Almanac</h1>
+        <p>Catálogo oficial de plantas defensivas</p>
     </header>
 
     <section class="plants-section">
 
-        <h2>Plantas Destacadas</h2>
-
-
-        <div class="cards" id="plants-container">
-
-        </div>
-
+        <div class="cards" id="plants-container"></div>
 
     </section>
 
-        <script>
+    <div class="modal" id="plant-modal">
 
-    async function loadPlants() {
+        <div class="modal-content">
 
-        const response = await fetch('http://localhost:8080/plants');
+            <span class="close-btn" onclick="closeModal()">
+                ✖
+            </span>
 
-        const plants = await response.json();
+            <img id="modal-image">
 
-        const container = document.getElementById('plants-container');
+            <div class="modal-info">
 
-        plants.forEach(plant => {
+                <h2 id="modal-name"></h2>
 
-            const card = document.createElement('div');
+                <p id="modal-description"></p>
 
-            card.classList.add('card');
+                <p id="modal-damage"></p>
 
-            card.innerHTML = `
-                <h3>${plant.name}</h3>
-                <p>${plant.description}</p>
-                <p>🌞 Cost: ${plant.sun_cost}</p>
-                <p>💥 Damage: ${plant.damage}</p>
-            `;
+                <p id="modal-cost"></p>
 
-            container.appendChild(card);
+            </div>
 
-        });
+        </div>
 
-    }
+    </div>
 
-    loadPlants();
+    <script>
+
+        async function loadPlants() {
+
+            const response = await fetch('http://localhost:8080/plants');
+
+            const plants = await response.json();
+
+            const container = document.getElementById('plants-container');
+
+            container.innerHTML = '';
+
+            plants.forEach(plant => {
+
+                const card = document.createElement('div');
+
+                card.classList.add('card');
+
+                card.innerHTML = `
+                
+                    <img 
+                        src="${plant.image_url}"
+                        alt="${plant.name}"
+                    >
+
+                `;
+
+                card.onclick = () => openModal(plant);
+
+                container.appendChild(card);
+
+            });
+
+        }
+
+        function openModal(plant) {
+
+            document.getElementById('plant-modal').style.display =
+                'flex';
+
+            document.getElementById('modal-image').src =
+                plant.image_url;
+
+            document.getElementById('modal-name').innerText =
+                plant.name;
+
+            document.getElementById('modal-description').innerText =
+                plant.description;
+
+            document.getElementById('modal-damage').innerText =
+                `💥 Damage: ${plant.damage}`;
+
+            document.getElementById('modal-cost').innerText =
+                `🌞 Sun Cost: ${plant.sun_cost}`;
+
+        }
+
+        function closeModal() {
+
+            document.getElementById('plant-modal').style.display =
+                'none';
+
+        }
+
+        loadPlants();
 
     </script>
 
