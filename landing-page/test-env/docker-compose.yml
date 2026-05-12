@@ -21,13 +21,10 @@ services:
   backend:
     build: ../backend
     restart: always
+    volumes:
+      - ./logs:/app/logs
     ports:
       - "8080:8080"
-    environment:
-      DB_HOST: db # This MUST match the service name above
-      DB_USER: root
-      DB_PASSWORD: Zombidito-100
-      DB_NAME: pvz_db
     depends_on:
       - db
     networks:
