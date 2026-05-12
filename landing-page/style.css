@@ -23,6 +23,35 @@ header p {
     font-size: 18px;
 }
 
+.about-section {
+
+    background-color: rgba(255,255,255,0.8);
+
+    margin: 30px;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+
+.about-section h2 {
+
+    margin-top: 0;
+
+    color: #2e7d32;
+}
+
+.about-section p {
+
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
 .plants-section {
     padding: 40px;
 }
