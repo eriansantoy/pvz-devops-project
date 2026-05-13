@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## Configuration
-CSV_FILE="plants.csv"
+CSV_FILE="$1"
 API_URL="http://10.0.138.50:8080/plants"
 
 # Check if jq is installed
