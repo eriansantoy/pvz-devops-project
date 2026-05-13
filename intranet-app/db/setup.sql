@@ -7,8 +7,3 @@ CREATE TABLE IF NOT EXISTS plants (
     image_url VARCHAR(500),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-
--- Optional: Add some starting data
-INSERT INTO plants (name, damage, sun_cost, description) VALUES 
-('Peashooter', 20, 100, 'Shoots peas at zombies'),
-('Sunflower', 0, 50, 'Gives you extra sun');
