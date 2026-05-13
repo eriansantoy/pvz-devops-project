@@ -1,49 +1,49 @@
 1,Lanzaguisantes,1,100,"Lanza guisantes al enemigo.",https://plantsvszombies.wiki.gg/images/Peashooter1.png
 2,Girasol,0,50,"Crea soles equivalentes a 25 cada 20 segundos.",https://plantsvszombies.wiki.gg/images/Sunflower1.png
-3,Petacereza,90,150,"Explota matando todos los zombies de un área 3x3.",https://plantsvszombies.wiki.gg/images/Cherry_Bomb.png
-4,Nuez,0,50,"Protege a las demás plantas.",https://plantsvszombies.wiki.gg/images/Wall-nut.png
-5,Patatapum,90,25,"Explota cuando un zombi la pisa, pero tarda en armarse.",https://plantsvszombies.wiki.gg/images/Potato_Mine.png
-6,Hielaguisantes,1,175,"Lanza guisantes que congelan y ralentizan.",https://plantsvszombies.wiki.gg/images/Snow_Pea.png
-7,"Planta carroñívora",120,150,"Devora un zombi entero pero es vulnerable mientras mastica.",https://plantsvszombies.wiki.gg/images/Chomper.png
-8,Repetidora,2,200,"Lanza dos guisantes a la vez.",https://plantsvszombies.wiki.gg/images/Repeater.png
-9,"Seta Desesporada",1,0,"Hongo pequeño que lanza esporas a corta distancia.",https://plantsvszombies.wiki.gg/images/Puff-shroom.png
-10,"Seta Solar",0,25,"Da poco sol al principio y normal después.",https://plantsvszombies.wiki.gg/images/Sun-shroom.png
-11,Humoseta,1,75,"Lanza esporas a distancia mediana que traspasa puertas y periódicos.",https://plantsvszombies.wiki.gg/images/Fume-shroom.png
-12,Comepiedras,0,75,"Come tumbas.",https://plantsvszombies.wiki.gg/images/Grave_Buster.png
-13,Hipnoseta,0,75,"Cuando un zombi se la coma, dará vuelta y luchará por ti.",https://plantsvszombies.wiki.gg/images/Hypno-shroom.png
-14,"Seta Miedica",1,25,"Lanza esporas a larga distancia y se esconde si se acerca un zombie.",https://plantsvszombies.wiki.gg/images/Scaredy-shroom.png
-15,"Seta Congelada",1,75,"Congela todos los zombies de la pantalla y daña muy poco.",https://plantsvszombies.wiki.gg/images/Ice-shroom.png
-16,Petaseta,90,125,"Explota matando a la mayoría de los zombies en pantalla.",https://plantsvszombies.wiki.gg/images/Doom-shroom.png
-17,Nenúfar,0,25,"Sirve de base para que plantes plantas no acuáticas en el agua.",https://plantsvszombies.wiki.gg/images/Lily_Pad.png
-18,Apisonaflor,90,50,"Aplasta los zombies que estén a cualquiera de sus lados derecho e izquierdo.",https://plantsvszombies.wiki.gg/images/Squash.png
-19,Tripitidora,1,325,"Planta más cara del juego que lanza 3 guisantes que se dirigen hacia enfrente, arriba y abajo (en diagonal).",https://plantsvszombies.wiki.gg/images/Threepeater.png
-20,Zampalga,120,25,"Agarra un zombi bajo del agua y lo ahoga.",https://plantsvszombies.wiki.gg/images/Tangle_Kelp.png
-21,Jalapeño,90,125,"Explota matando todos los zombis en una línea entera.",https://plantsvszombies.wiki.gg/images/Jalapeno.png
-22,Pinchohierba,1,100,"Pincha a los zombis que la pisan.",https://plantsvszombies.wiki.gg/images/Spikeweed.png
-23,Plantorcha,2,175,"Prende fuego los guisantes que lo sobrepasan dañando el doble a los zombies.",https://plantsvszombies.wiki.gg/images/Torchwood.png
-24,"Nuez Cáscara-rabias",0,125,"Más dura que la nuez, protege a tus plantas.Imposible de saltar.",https://plantsvszombies.wiki.gg/images/Tall-nut.png
-25,Marseta,1,0,"Seta acuática que lanza esporas de cerca.",https://plantsvszombies.wiki.gg/images/Sea-shroom.png
-26,Planterna,0,25,"Ilumina un área permitiendo ver en la niebla.",https://plantsvszombies.wiki.gg/images/Plantern.png
-27,Cactus,1,125,"Explota globos y dispara púas.",https://plantsvszombies.wiki.gg/images/Cactus.png
-28,Trebolador,0,100,"Expulsa la niebla y a los zombies del globo.",https://plantsvszombies.wiki.gg/images/Blover.png
-29,Bipetidora,2,125,"Lanza guisantes hacia adelante y hacia atrás.",https://plantsvszombies.wiki.gg/images/Split_Pea.png
-30,Frustrella,1,125,"Lanza estrellas en 5 direcciones distintas.",https://plantsvszombies.wiki.gg/images/Starfruit.png
-31,Calabaza,0,125,"Protege las plantas en su interior.",https://plantsvszombies.wiki.gg/images/Pumpkin.png
-32,Magnetoseta,0,100,"Despoja de objetos metálicos a los zombies.",https://plantsvszombies.wiki.gg/images/Magnet-shroom.png
-33,Coltapulta,2,100,"Lanza coles al enemigo.",https://plantsvszombies.wiki.gg/images/Cabbage-pult.png
-34,Maceta,0,25,"Sirve de base para plantar en el tejado.",https://plantsvszombies.wiki.gg/images/Flower_Pot.png
-35,Lanzamaiz,1,100,"Lanza granos de maíz y mantequilla que paraliza a los zombies.",https://plantsvszombies.wiki.gg/images/Kernel-pult.png
-36,"Grano de Café",0,75,"Se planta sobre alguna seta y la despierta durante el día.",https://plantsvszombies.wiki.gg/images/Coffee_Bean.png
-37,Ajo,0,50,"Repele a los zombies cambiándolos de línea.",https://plantsvszombies.wiki.gg/images/Garlic.png
-38,Paraplanta,0,100,"Protege plantas de Zombi Colgao y Zombipulta",https://plantsvszombies.wiki.gg/images/Umbrella_Leaf.png
-39,Margarita,0,50,"Produce monedas de oro y plata.",https://plantsvszombies.wiki.gg/images/Marigold.png
-40,Melonpulta,4,300,"Lanza sandías dañando a grupos de zombies.",https://plantsvszombies.wiki.gg/images/Melon-pult.png
-41,Guisantralladora,4,250,"Lanza 4 guisantes a la vez. Se planta sobre la Repetidora.",https://plantsvszombies.wiki.gg/images/Gatling_Pea.png
-42,Birasol,0,150,"Produce el doble de sol que el Girasol. Se planta sobre el Girasol.",https://plantsvszombies.wiki.gg/images/Twin_Sunflower.png
-43,Gasoseta,4,150,"Lanza gases pesados a corta distancia en 8 direcciones y se planta sobre la Humoseta.",https://plantsvszombies.wiki.gg/images/Gloom-shroom.png
-44,"Rabo de Gato",2,225,"Lanza espinas teledirigidas a cualquier zombi y se planta sobre el Nenúfar.",https://plantsvszombies.wiki.gg/images/Cattail.png
-45,"Melonpulta Congelada",4,200,"Lanza melones que congelan, ralentizan y dañan a los zombies en un area.",https://plantsvszombies.wiki.gg/images/Winter_Melon.png
-46,Pinchorroca,2,125,"Daña el doble a los zombies que la pisan.",https://plantsvszombies.wiki.gg/images/Spikerock.png
-47,"Magnetoseta Dorada",0,50,"Atrae monedas y diamantes.",https://plantsvszombies.wiki.gg/images/Gold_Magnet.png
-48,Mazorcañón,90,500,"Haz clic en el Mazorcañón para matar los zombies en un área de 2x2. Se planta en dos Lanzamaices conlindantes.",https://plantsvszombies.wiki.gg/images/Cob_Cannon.png
-49,Imitadora,0,0,"Duplica cualquier planta exceptuando las mejoras y las especiales.",https://plantsvszombies.wiki.gg/images/Imitater.png
+3,Petacereza,90,150,"Explota matando todos los zombies de un área 3x3.",https://plantsvszombies.wiki.gg/images/Cherry_Bomb1.png
+4,Nuez,0,50,"Protege a las demás plantas.",https://plantsvszombies.wiki.gg/images/Wall-nut1.png
+5,Patatapum,90,25,"Explota cuando un zombi la pisa, pero tarda en armarse.",https://plantsvszombies.wiki.gg/images/Potato_Mine1.png
+6,Hielaguisantes,1,175,"Lanza guisantes que congelan y ralentizan.",https://plantsvszombies.wiki.gg/images/Snow_Pea1.png
+7,"Planta carroñívora",120,150,"Devora un zombi entero pero es vulnerable mientras mastica.",https://plantsvszombies.wiki.gg/images/Chomper1.png
+8,Repetidora,2,200,"Lanza dos guisantes a la vez.",https://plantsvszombies.wiki.gg/images/Repeater1.png
+9,"Seta Desesporada",1,0,"Hongo pequeño que lanza esporas a corta distancia.",https://plantsvszombies.wiki.gg/images/Puff-shroom1.png
+10,"Seta Solar",0,25,"Da poco sol al principio y normal después.",https://plantsvszombies.wiki.gg/images/Sun-shroom1.png
+11,Humoseta,1,75,"Lanza esporas a distancia mediana que traspasa puertas y periódicos.",https://plantsvszombies.wiki.gg/images/Fume-shroom1.png
+12,Comepiedras,0,75,"Come tumbas.",https://plantsvszombies.wiki.gg/images/Grave_Buster1.png
+13,Hipnoseta,0,75,"Cuando un zombi se la coma, dará vuelta y luchará por ti.",https://plantsvszombies.wiki.gg/images/Hypno-shroom1.png
+14,"Seta Miedica",1,25,"Lanza esporas a larga distancia y se esconde si se acerca un zombie.",https://plantsvszombies.wiki.gg/images/Scaredy-shroom1.png
+15,"Seta Congelada",1,75,"Congela todos los zombies de la pantalla y daña muy poco.",https://plantsvszombies.wiki.gg/images/Ice-shroom1.png
+16,Petaseta,90,125,"Explota matando a la mayoría de los zombies en pantalla.",https://plantsvszombies.wiki.gg/images/Doom-shroom1.png
+17,Nenúfar,0,25,"Sirve de base para que plantes plantas no acuáticas en el agua.",https://plantsvszombies.wiki.gg/images/Lily_Pad1.png
+18,Apisonaflor,90,50,"Aplasta los zombies que estén a cualquiera de sus lados derecho e izquierdo.",https://plantsvszombies.wiki.gg/images/Squash1.png
+19,Tripitidora,1,325,"Planta más cara del juego que lanza 3 guisantes que se dirigen hacia enfrente, arriba y abajo (en diagonal).",https://plantsvszombies.wiki.gg/images/Threepeater1.png
+20,Zampalga,120,25,"Agarra un zombi bajo del agua y lo ahoga.",https://plantsvszombies.wiki.gg/images/Tangle_Kelp1.png
+21,Jalapeño,90,125,"Explota matando todos los zombis en una línea entera.",https://plantsvszombies.wiki.gg/images/Jalapeno1.png
+22,Pinchohierba,1,100,"Pincha a los zombis que la pisan.",https://plantsvszombies.wiki.gg/images/Spikeweed1.png
+23,Plantorcha,2,175,"Prende fuego los guisantes que lo sobrepasan dañando el doble a los zombies.",https://plantsvszombies.wiki.gg/images/Torchwood1.png
+24,"Nuez Cáscara-rabias",0,125,"Más dura que la nuez, protege a tus plantas.Imposible de saltar.",https://plantsvszombies.wiki.gg/images/Tall-nut1.png
+25,Marseta,1,0,"Seta acuática que lanza esporas de cerca.",https://plantsvszombies.wiki.gg/images/Sea-shroom1.png
+26,Planterna,0,25,"Ilumina un área permitiendo ver en la niebla.",https://plantsvszombies.wiki.gg/images/Plantern1.png
+27,Cactus,1,125,"Explota globos y dispara púas.",https://plantsvszombies.wiki.gg/images/Cactus1.png
+28,Trebolador,0,100,"Expulsa la niebla y a los zombies del globo.",https://plantsvszombies.wiki.gg/images/Blover1.png
+29,Bipetidora,2,125,"Lanza guisantes hacia adelante y hacia atrás.",https://plantsvszombies.wiki.gg/images/Split_Pea1.png
+30,Frustrella,1,125,"Lanza estrellas en 5 direcciones distintas.",https://plantsvszombies.wiki.gg/images/Starfruit1.png
+31,Calabaza,0,125,"Protege las plantas en su interior.",https://plantsvszombies.wiki.gg/images/Pumpkin1.png
+32,Magnetoseta,0,100,"Despoja de objetos metálicos a los zombies.",https://plantsvszombies.wiki.gg/images/Magnet-shroom1.png
+33,Coltapulta,2,100,"Lanza coles al enemigo.",https://plantsvszombies.wiki.gg/images/Cabbage-pult1.png
+34,Maceta,0,25,"Sirve de base para plantar en el tejado.",https://plantsvszombies.wiki.gg/images/Flower_Pot1.png
+35,Lanzamaiz,1,100,"Lanza granos de maíz y mantequilla que paraliza a los zombies.",https://plantsvszombies.wiki.gg/images/Kernel-pult1.png
+36,"Grano de Café",0,75,"Se planta sobre alguna seta y la despierta durante el día.",https://plantsvszombies.wiki.gg/images/Coffee_Bean1.png
+37,Ajo,0,50,"Repele a los zombies cambiándolos de línea.",https://plantsvszombies.wiki.gg/images/Garlic1.png
+38,Paraplanta,0,100,"Protege plantas de Zombi Colgao y Zombipulta",https://plantsvszombies.wiki.gg/images/Umbrella_Leaf1.png
+39,Margarita,0,50,"Produce monedas de oro y plata.",https://plantsvszombies.wiki.gg/images/Marigold1.png
+40,Melonpulta,4,300,"Lanza sandías dañando a grupos de zombies.",https://plantsvszombies.wiki.gg/images/Melon-pult1.png
+41,Guisantralladora,4,250,"Lanza 4 guisantes a la vez. Se planta sobre la Repetidora.",https://plantsvszombies.wiki.gg/images/Gatling_Pea1.png
+42,Birasol,0,150,"Produce el doble de sol que el Girasol. Se planta sobre el Girasol.",https://plantsvszombies.wiki.gg/images/Twin_Sunflower1.png
+43,Gasoseta,4,150,"Lanza gases pesados a corta distancia en 8 direcciones y se planta sobre la Humoseta.",https://plantsvszombies.wiki.gg/images/Gloom-shroom1.png
+44,"Rabo de Gato",2,225,"Lanza espinas teledirigidas a cualquier zombi y se planta sobre el Nenúfar.",https://plantsvszombies.wiki.gg/images/Cattail1.png
+45,"Melonpulta Congelada",4,200,"Lanza melones que congelan, ralentizan y dañan a los zombies en un area.",https://plantsvszombies.wiki.gg/images/Winter_Melon1.png
+46,Pinchorroca,2,125,"Daña el doble a los zombies que la pisan.",https://plantsvszombies.wiki.gg/images/Spikerock1.png
+47,"Magnetoseta Dorada",0,50,"Atrae monedas y diamantes.",https://plantsvszombies.wiki.gg/images/Gold_Magnet1.png
+48,Mazorcañón,90,500,"Haz clic en el Mazorcañón para matar los zombies en un área de 2x2. Se planta en dos Lanzamaices conlindantes.",https://plantsvszombies.wiki.gg/images/Cob_Cannon1.png
+49,Imitadora,0,0,"Duplica cualquier planta exceptuando las mejoras y las especiales.",https://plantsvszombies.wiki.gg/images/Imitater1.png
