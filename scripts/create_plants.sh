@@ -4,19 +4,33 @@
 CSV_FILE="$1"
 API_URL="http://10.0.138.50:8080/plants"
 
-# Check if jq is installed
 if ! command -v jq &>/dev/null; then
-    echo "❌ Error: 'jq' is not installed. Please install it with: sudo apt install jq"
+    echo "❌ Error: 'jq' is not installed."
     exit 1
 fi
 
 echo "🌱 Starting plant migration to API..."
 
-# Skip the header (tail -n +2) and read the CSV line by line
-cat "$CSV_FILE" | while IFS=, read -r id name damage sun_cost description image_url; do
+while read -r line; do
+    # 1. Extraer la URL (todo lo que está después de la última coma)
+    image_url="${line##*,}"
 
-    # Remove surrounding quotes from description and image_url if they exist
-    # and use jq to create a safe JSON object
+    # 2. Quitar la URL y la última coma de la línea para procesar el resto
+    rest="${line%,*}"
+
+    # 3. Ahora el resto es: id,nombre,daño,costo,descripcion
+    # Podemos extraer la descripción (lo que queda después de la 4ta coma)
+    # Pero para no complicarnos con los índices, usamos un pequeño truco de 'cut'
+    id=$(echo "$rest" | cut -d',' -f1)
+    name=$(echo "$rest" | cut -d',' -f2)
+    damage=$(echo "$rest" | cut -d',' -f3)
+    sun_cost=$(echo "$rest" | cut -d',' -f4)
+
+    # La descripción es todo lo que queda después de la 4ta columna
+    # 'cut -d, -f5-' toma desde la columna 5 hasta el final (incluyendo comas internas)
+    description=$(echo "$rest" | cut -d',' -f5- | sed 's/^"//;s/"$//')
+
+    # Crear JSON con jq
     JSON_PAYLOAD=$(jq -n \
         --arg n "$name" \
         --arg d "$damage" \
@@ -27,12 +41,12 @@ cat "$CSV_FILE" | while IFS=, read -r id name damage sun_cost description image_
 
     echo "Sending: $name..."
 
-    # Send the POST request
     RESPONSE=$(curl -s -X POST "$API_URL" \
         -H "Content-Type: application/json" \
         -d "$JSON_PAYLOAD")
 
     echo "Response: $RESPONSE"
-done
 
-echo "✅ Migration complete!"!/bin/sh
+done <"$CSV_FILE"
+
+echo "✅ Migration complete!"
