@@ -8,6 +8,8 @@ INTRANET_IP="10.0.138.50"
 PEM_FILE="/home/ubuntu/llave.pem"
 BACKEND_ENV="intranet-app/backend/.env"
 
+cd "$(mktemp -d)"
+
 echo "🌻 Starting Final Robust Deployment..."
 
 # --- PHASE 1: BASTION DOCKER CHECK ---
