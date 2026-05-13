@@ -5,6 +5,9 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: Zombidito-100
       MYSQL_DATABASE: pvz_db
+
+    volumes:
+      - ./db/setup.sql:/docker-entrypoint-initdb.d/setup.sql
     ports:
       - "3306:3306"
 
