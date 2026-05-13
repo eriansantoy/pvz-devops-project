@@ -1,62 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garden Defense Systems Admin Panel</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Garden Defense Systems Admin Panel</title>
 
-    <link rel="stylesheet" href="admin.css">
-</head>
+		<link rel="stylesheet" href="admin.css">
+	</head>
 
-<body>
+	<body>
 
-    <header>
-        <h1>🌻 Garden Defense Systems Admin Panel 🌻</h1>
-    </header>
+		<header>
+			<h1>🌻 Garden Defense Systems Admin Panel 🌻</h1>
+		</header>
 
-    <section class="form-section">
+		<section class="form-section">
 
-        <h2>Agregar Planta</h2>
+			<h2>Agregar Planta</h2>
 
-        <div class="form-grid">
+			<div class="form-grid">
 
-            <input type="text" id="name" placeholder="Nombre">
+				<input type="text" id="name" placeholder="Nombre">
 
-            <input type="number" id="damage" placeholder="Daño">
+				<input type="number" id="damage" placeholder="Daño">
 
-            <input type="number" id="sun_cost" placeholder="Costo de sol">
+				<input type="number" id="sun_cost" placeholder="Costo de sol">
 
-            <input type="text" id="description" placeholder="Descripción">
+				<input type="text" id="description" placeholder="Descripción">
 
-            <input type="text" id="image_url" placeholder="URL de imagen">
+				<input type="text" id="image_url" placeholder="URL de imagen">
+			</div>
 
-        </div>
+			<button class="add-btn"
+			        id="submit-btn"
+			        onclick="addPlant()"
+			>
+				Agregar Planta
+			</button>
+		</section>
 
-        <button 
-            class="add-btn"
-            id="submit-btn"
-            onclick="addPlant()"
-        >
-            Agregar Planta
-        </button>
+		<section class="plants-section">
 
-    </section>
+			<h2>Plantas Registradas</h2>
 
-    <section class="plants-section">
+			<div id="plants-container"></div>
+		</section>
 
-        <h2>Plantas Registradas</h2>
+		<footer>
+			© 2026 Garden Defense Systems. Panel de administración interna.
+		</footer>
 
-        <div id="plants-container"></div>
+		<script src="admin.js"></script>
 
-    </section>
-
-    <footer>
-    © 2026 Garden Defense Systems. Panel de administración interna.
-</footer>
-
-    <script src="admin.js"></script>
-
-</body>
-
+		<div id="edit-modal" class="modal">
+			<div class="modal-content">
+				<h2>Editar Planta</h2>
+				<div class="modal-grid">
+					<input type="text" id="edit-name" placeholder="Nombre">
+					<input type="number" id="edit-damage" placeholder="Daño">
+					<input type="number" id="edit-sun_cost" placeholder="Costo de sol">
+					<input type="text" id="edit-description" placeholder="Descripción">
+					<div class="url-preview-container">
+						<input type="text" id="edit-image_url" placeholder="URL de imagen" oninput="updatePreview()">
+						<img id="edit-preview" src="" alt="Vista previa" style="display:none;">
+					</div>
+				</div>
+				<div class="modal-actions">
+					<button class="add-btn" onclick="saveEdit()">Guardar Cambios</button>
+					<button class="delete-btn" onclick="closeModal()">Cancelar</button>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
+
