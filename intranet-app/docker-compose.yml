@@ -1,42 +1,29 @@
-version: '3.8'
-
 services:
-
-  frontend: 
-    build: frontend
-
-    ports:
-      - "80:80"
-
-    restart: always
-
-  backend:
-
-    build: backend
-
-    ports:
-      - "8080:8080"
-
-    depends_on:
-      - mysql-db
-
-    restart: always
-
-    environment:
-      DB_HOST: mysql-db
-      DB_USER: root
-      DB_PASSWORD: Zombidito-100
-      DB_NAME: pvz_db
-
-  mysql-db:
-
+  db:
     image: mysql:8.0
-
+    container_name: mysql-db-intranet
     environment:
       MYSQL_ROOT_PASSWORD: Zombidito-100
       MYSQL_DATABASE: pvz_db
 
+    volumes:
+      - ./db/setup.sql:/docker-entrypoint-initdb.d/setup.sql
     ports:
       - "3306:3306"
 
+  backend:
+    build: backend
     restart: always
+    volumes:
+      - ./logs:/app/logs
+    env_file:
+      - ./backend/.env
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+
+  frontend:
+    build: frontend
+    ports:
+      - "80:80"
