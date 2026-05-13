@@ -1,0 +1,50 @@
+id,name,damage,sun_cost,description,image_url
+1,Lanzaguisantes,1,100,"Lanza guisantes al enemigo.",https://static.wikia.nocookie.net/plantsvszombies/images/d/d0/LanzaguisantesPvz.png/revision/latest?cb=20160114190518&path-prefix=es
+2,Girasol,0,50,"Crea soles equivalentes a 25 cada 20 segundos.",https://static.wikia.nocookie.net/plantsvszombies/images/c/cd/GirasolPvz.png/revision/latest?cb=20160114190910&path-prefix=es
+3,Petacereza,90,150,"Explota matando todos los zombies de un área 3x3.",https://static.wikia.nocookie.net/plantsvszombies/images/6/6f/PetacerezaPvz.png/revision/latest?cb=20160114190545&path-prefix=es
+4,Nuez,0,50,"Protege a las demás plantas.",https://static.wikia.nocookie.net/plantsvszombies/images/3/3d/NuezPvz.png/revision/latest?cb=20160114190604&path-prefix=es
+5,Patatapum,90,25,"Explota cuando un zombi la pisa, pero tarda en armarse.",https://static.wikia.nocookie.net/plantsvszombies/images/a/ae/PatatapumPvz.png/revision/latest?cb=20160114190624&path-prefix=es
+6,Hielaguisantes,1,175,"Lanza guisantes que congelan y ralentizan.",https://static.wikia.nocookie.net/plantsvszombies/images/0/0c/HielaguisantesPvz.png/revision/latest?cb=20160114190749&path-prefix=es
+7,"Planta carroñívora",120,150,"Devora un zombi entero pero es vulnerable mientras mastica.",https://static.wikia.nocookie.net/plantsvszombies/images/f/f4/PlantaCarro%C3%B1ivoraPvz.png/revision/latest?cb=20160114190804&path-prefix=es
+8,Repetidora,2,200,"Lanza dos guisantes a la vez.",https://static.wikia.nocookie.net/plantsvszombies/images/7/74/RepetidoraPvz.png/revision/latest?cb=20160114190820&path-prefix=es
+9,"Seta Desesporada",1,0,"Hongo pequeño que lanza esporas a corta distancia.",https://static.wikia.nocookie.net/plantsvszombies/images/5/50/SetaDesesporadaPvz.png/revision/latest?cb=20160114191026&path-prefix=es
+10,"Seta Solar",0,25,"Da poco sol al principio y normal después.",https://static.wikia.nocookie.net/plantsvszombies/images/5/57/SetasSolarPvz.png/revision/latest?cb=20160114191113&path-prefix=es
+11,Humoseta,1,75,"Lanza esporas a distancia mediana que traspasa puertas y periódicos.",https://static.wikia.nocookie.net/plantsvszombies/images/3/37/HumosetaPvz.png/revision/latest?cb=20160114191158&path-prefix=es
+12,Comepiedras,0,75,"Come tumbas.",https://static.wikia.nocookie.net/plantsvszombies/images/4/4a/ComepiedrasPvz.png/revision/latest?cb=20160114191235&path-prefix=es
+13,Hipnoseta,0,75,"Cuando un zombi se la coma, dará vuelta y luchará por ti.",https://static.wikia.nocookie.net/plantsvszombies/images/1/11/HipnosetaPvz.png/revision/latest?cb=20160114191209&path-prefix=es
+14,"Seta Miedica",1,25,"Lanza esporas a larga distancia y se esconde si se acerca un zombie.",https://static.wikia.nocookie.net/plantsvszombies/images/7/77/SetaMiedicaPvz.png/revision/latest?cb=20151011214257&path-prefix=es
+15,"Seta Congelada",1,75,"Congela todos los zombies de la pantalla y daña muy poco.",https://static.wikia.nocookie.net/plantsvszombies/images/4/4e/SetaCongeladaPvz.png/revision/latest?cb=20160114191245&path-prefix=es
+16,Petaseta,90,125,"Explota matando a la mayoría de los zombies en pantalla.",https://static.wikia.nocookie.net/plantsvszombies/images/f/f1/PetasetaPvz.png/revision/latest?cb=20160114191258&path-prefix=es
+17,Nenúfar,0,25,"Sirve de base para que plantes plantas no acuáticas en el agua.",https://static.wikia.nocookie.net/plantsvszombies/images/2/25/NenufarPvz.png/revision/latest?cb=20150919162232&path-prefix=es
+18,Apisonaflor,90,50,"Aplasta los zombies que estén a cualquiera de sus lados derecho e izquierdo.",https://static.wikia.nocookie.net/plantsvszombies/images/5/51/ApisonaflorPvz.png/revision/latest?cb=20150919162137&path-prefix=es
+19,Tripitidora,1,325,"Planta más cara del juego que lanza 3 guisantes que se dirigen hacia enfrente, arriba y abajo (en diagonal).",https://static.wikia.nocookie.net/plantsvszombies/images/c/c9/TripitidoraPvz.png/revision/latest?cb=20160114191846&path-prefix=es
+20,Zampalga,120,25,"Agarra un zombi bajo del agua y lo ahoga.",https://static.wikia.nocookie.net/plantsvszombies/images/f/f6/ZampalgaPvz.png/revision/latest?cb=20160114191946&path-prefix=es
+21,Jalapeño,90,125,"Explota matando todos los zombis en una línea entera.",https://static.wikia.nocookie.net/plantsvszombies/images/d/d7/Jalape%C3%B1oPvz.png/revision/latest?cb=20160114192056&path-prefix=es
+22,Pinchohierba,1,100,"Pincha a los zombis que la pisan.",https://static.wikia.nocookie.net/plantsvszombies/images/4/42/PinchohierbaPvz.png/revision/latest?cb=20160114192240&path-prefix=es
+23,Plantorcha,2,175,"Prende fuego los guisantes que lo sobrepasan dañando el doble a los zombies.",https://static.wikia.nocookie.net/plantsvszombies/images/9/91/PlantorchaPvz.png/revision/latest?cb=20160114192340&path-prefix=es
+24,"Nuez Cáscara-rabias",0,125,"Más dura que la nuez, protege a tus plantas.Imposible de saltar.",https://static.wikia.nocookie.net/plantsvszombies/images/f/f1/NuezCascararrabiasPvz.png/revision/latest?cb=20160114192358&path-prefix=es
+25,Marseta,1,0,"Seta acuática que lanza esporas de cerca.",https://static.wikia.nocookie.net/plantsvszombies/images/3/39/MarsetaPvz.png/revision/latest?cb=20160114193010&path-prefix=es
+26,Planterna,0,25,"Ilumina un área permitiendo ver en la niebla.",https://static.wikia.nocookie.net/plantsvszombies/images/0/0a/PlanternaPvz.png/revision/latest?cb=20160114192949&path-prefix=es
+27,Cactus,1,125,"Explota globos y dispara púas.",https://static.wikia.nocookie.net/plantsvszombies/images/a/aa/Cactus2.png/revision/latest?cb=20140409210149&path-prefix=es
+28,Trebolador,0,100,"Expulsa la niebla y a los zombies del globo.",https://static.wikia.nocookie.net/plantsvszombies/images/3/3d/TreboladorPvz.png/revision/latest?cb=20160114192929&path-prefix=es
+29,Bipetidora,2,125,"Expulsa la niebla y a los zombies del globo.",https://static.wikia.nocookie.net/plantsvszombies/images/b/b8/BipetidoraPvz.png/revision/latest?cb=20150919162123&path-prefix=es
+30,Frustrella,1,125,"Lanza estrellas en 5 direcciones distintas.",https://static.wikia.nocookie.net/plantsvszombies/images/0/0c/FrustrellaPvz.png/revision/latest?cb=20160114192912&path-prefix=es
+31,Calabaza,0,125,"Protege las plantas en su interior.",https://static.wikia.nocookie.net/plantsvszombies/images/8/84/CalabazaPvz.png/revision/latest?cb=20160114192847&path-prefix=es
+32,Magnetoseta,0,100,"Despoja de objetos metálicos a los zombies.",https://static.wikia.nocookie.net/plantsvszombies/images/8/8a/MagnetosetaPvz.png/revision/latest?cb=20150919162219&path-prefix=es
+33,Coltapulta,2,100,"Lanza coles al enemigo.",https://static.wikia.nocookie.net/plantsvszombies/images/d/da/ColtapultaPvz.png/revision/latest?cb=20160114194857&path-prefix=es
+34,Maceta,0,25,"Sirve de base para plantar en el tejado.",https://static.wikia.nocookie.net/plantsvszombies/images/8/8f/MacetaPvz.png/revision/latest?cb=20160114193054&path-prefix=es
+35,Lanzamaiz,1,100,"Lanza granos de maíz y mantequilla que paraliza a los zombies.",https://static.wikia.nocookie.net/plantsvszombies/images/1/16/LanzamaizPvz.png/revision/latest?cb=20150919162206&path-prefix=es
+36,"Grano de Café",0,75,"Se planta sobre alguna seta y la despierta durante el día.",https://static.wikia.nocookie.net/plantsvszombies/images/3/3e/GranoDeCafePvz.png/revision/latest?cb=20160114193226&path-prefix=es
+37,Ajo,0,50,"Repele a los zombies cambiándolos de línea.",https://static.wikia.nocookie.net/plantsvszombies/images/0/04/AjoPvz.png/revision/latest?cb=20160114193300&path-prefix=es
+38,Paraplanta,0,100,"Protege plantas de Zombi Colgao y Zombipulta",https://static.wikia.nocookie.net/plantsvszombies/images/8/8d/ParaplantaPvz.png/revision/latest?cb=20160114193510&path-prefix=es
+39,Margarita,0,50,"Produce monedas de oro y plata.",https://static.wikia.nocookie.net/plantsvszombies/images/7/77/MargaritaPvz.png/revision/latest?cb=20160114193453&path-prefix=es
+40,Melonpulta,4,300,"Lanza sandías dañando a grupos de zombies.",https://static.wikia.nocookie.net/plantsvszombies/images/5/55/MelonpultaPvz.png/revision/latest?cb=20160114193405&path-prefix=es
+41,Guisantralladora,4,250,"Lanza 4 guisantes a la vez. Se planta sobre la Repetidora.",https://static.wikia.nocookie.net/plantsvszombies/images/3/38/GuisantralladoraPvz.png/revision/latest?cb=20151109183508&path-prefix=es
+42,Birasol,0,150,"Produce el doble de sol que el Girasol. Se planta sobre el Girasol.",https://static.wikia.nocookie.net/plantsvszombies/images/2/23/BirasolPvz.png/revision/latest?cb=20151127005020&path-prefix=es
+43,Gasoseta,4,150,"Lanza gases pesados a corta distancia en 8 direcciones y se planta sobre la Humoseta.",https://static.wikia.nocookie.net/plantsvszombies/images/4/4a/GasosetaPvz.png/revision/latest?cb=20160114193817&path-prefix=es
+44,"Rabo de Gato",2,225,"Lanza espinas teledirigidas a cualquier zombi y se planta sobre el Nenúfar.",https://static.wikia.nocookie.net/plantsvszombies/images/2/2e/RaboDeGatoPvz.png/revision/latest?cb=20160114193852&path-prefix=es
+45,"Melonpulta Congelada",4,200,"Lanza melones que congelan, ralentizan y dañan a los zombies en un area.",https://static.wikia.nocookie.net/plantsvszombies/images/d/df/MelonpultaCongeladaPvz.png/revision/latest?cb=20160114194043&path-prefix=es
+46,Pinchorroca,2,125,"Daña el doble a los zombies que la pisan.",https://static.wikia.nocookie.net/plantsvszombies/images/6/62/PinchorrocaPvz.png/revision/latest?cb=20160114194132&path-prefix=es
+47,"Magnetoseta Dorada",0,50,"Atrae monedas y diamantes.",https://static.wikia.nocookie.net/plantsvszombies/images/6/6c/MagnetosetaDoradaPvz.png/revision/latest?cb=20160114194203&path-prefix=es
+48,Mazorcañón,90,500,"Haz clic en el Mazorcañón para matar los zombies en un área de 2x2. Se planta en dos Lanzamaices conlindantes.",https://static.wikia.nocookie.net/plantsvszombies/images/0/07/Mazorca%C3%B1onPvz.png/revision/latest?cb=20160114194146&path-prefix=es
+49,Imitadora,0,0,"Duplica cualquier planta exceptuando las mejoras y las especiales.",https://static.wikia.nocookie.net/plantsvszombies/images/9/9e/ImitadoraPvz2.png/revision/latest?cb=20160112192937&path-prefix=es
